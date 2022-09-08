@@ -1,5 +1,4 @@
 
-
 nombre = prompt ('Bienvenido a ARKI. Cual es tu nombre?')
 
 saludo = alert ('Hola, '+nombre+' un gusto tenerte!\n Para comenzar tu cotizacion deberas contestar las siguientes preguntas!')
