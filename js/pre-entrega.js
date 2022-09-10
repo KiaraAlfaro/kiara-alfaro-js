@@ -13,76 +13,62 @@ let productos = []
 let carrito = []
 
 
-//OBJETOS/SECTORES
+//--------- OBJETOS/SECTORES
 
-const cocina ={
+class sector {
 
-    id:1,
-    nombre: 'cocina',
-    precio: 6000
+    constructor (id, nombre, precio){
 
+        this.id = id
+        this.nombre = nombre
+        this.precio = precio
+    }
 }
+//cocina
 
-productos.push( cocina)
+const cocina = new sector (1, 'cocina', 6000);
 
+productos.push(cocina);
 
-const bano ={
+//bano
 
-    id:2,
-    nombre: 'bano',
-    precio: 8000
+const bano = new sector (2, 'bano', 8000);
 
-}
-productos.push(bano)
+productos.push(bano);
 
+//dormitorio
 
-const dormitorio ={
+const dormitorio = new sector (3, 'bano', 5000);
 
-    id:3,
-    nombre: 'dormitorio',
-    precio: 5000
+productos.push(dormitorio);
 
-}
-productos.push(dormitorio)
+//Sala de estar
 
+const salaDeEstar = new sector (4, 'sala de estar', 5500);
 
-const salaDeEstar  ={
+productos.push(salaDeEstar);
 
-    id:4,
-    nombre: 'salaDeEstar',
-    precio: 5500
+//Garage
 
-}
-productos.push(salaDeEstar)
+const garage = new sector (5, 'garage', 5300);
 
+productos.push(garage);
 
-const garage  ={
+//Oficina
 
-    id:5,
-    nombre: 'garage',
-    precio: 5500
+const oficina = new sector (6, 'oficina', 4500);
 
-}
-productos.push(garage)
+productos.push(oficina);
 
-
-const oficina  ={
-
-    id:6,
-    nombre: 'oficina',
-    precio: 5500
-
-}
-productos.push(oficina)
-
+//-----------------
 
 while (aumentarSector === true){
 
-    const productosolicitado = productos.find(prod=>prod.id===sectorseleccionado)
-
+    const productosolicitado = productos.find(prod => prod.id === sectorseleccionado)
+    
     if (sectorseleccionado){
 
-        totalcompra = totalcompra +productosolicitado.precio
+        totalcompra = totalcompra + productosolicitado.precio
         
     }else {
 
@@ -152,3 +138,5 @@ arquitecto = prompt( 'Elije a uno de nuestros Arquitectos para su proyecto:\n(in
     
         alert ('Gracias '+nombre+' por usar ARKI!')
     }
+
+
