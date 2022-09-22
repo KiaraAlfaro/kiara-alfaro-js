@@ -10,6 +10,25 @@
 <body>
 
     <h1>Bienvenidos a ARKI!</h1>
+
+    <h2 id="titulo2">Ingresa tus datos:</h2>
+
+    <form id="formRegistro">
+
+        
+        <label> Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Kiara..">
+
+        <label> Apellido:</label>
+        <input type="text" name="apellido" id="apellido" placeholder="Alfaro">
+
+        <label> E-mail:</label>
+        <input type="text" name="email" id="email" placeholder="ejemplo@gmail.com">
+        
+        <input type="submit" value="Enviar">
+
+    </form>
+
     <h3>Remodelaciones:</h3>
 
     <section class="presentacion">
@@ -22,7 +41,7 @@
     
             <select name="eleccionCocina" id="eleccionCocina"></select>
 
-            <div id=" agregarCocina"></div>
+            <div id="agregarCocina"></div>
             
     
         </div>
@@ -36,7 +55,7 @@
             <select name="eleccionBano" id="eleccionBano"></select>
 
 
-            <div id=" agregarBano"></div>
+            <div id="agregarBano"></div>
             
     
         </div>
@@ -45,5 +64,6 @@
    
 
     <script src="./js/dom.js"></script>
+    <script src="./js/formulario.js"></script>
 </body>
 </html>

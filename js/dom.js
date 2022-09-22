@@ -1,7 +1,7 @@
 
-nombre = prompt ('Bienvenido a ARKI. Cual es tu nombre?')
+//nombre = prompt ('Bienvenido a ARKI. Cual es tu nombre?')
 
-saludo = alert ('Hola, '+nombre+' un gusto tenerte, comencemos!')
+//saludo = alert ('Hola, '+nombre+' un gusto tenerte, comencemos!')
 
 let productosCocina = []
 let productosBano = []
@@ -49,7 +49,7 @@ productosCocina.forEach(prodCocina=>{
 })
 
 
-const agregarCocina= document.getElementById(' agregarCocina')
+const agregarCocina= document.getElementById('agregarCocina')
 
 const botonAgregarCocina = document.createElement('button')
 botonAgregarCocina.innerText = 'Agregar al carrito'
@@ -86,11 +86,11 @@ productosBano.forEach(prodBano=>{
     seleccionBano.append(option)
 })
 
-//const agregarBano = document.getElementById('agregarBano')
+const agregarBano = document.getElementById('agregarBano')
 
-//const botonAgregarBano = document.createElement('button')
-//botonAgregarBano.innerText = 'Agregar al carrito'
-//agregarBano.append(botonAgregarBano)
+const botonAgregarBano = document.createElement('button')
+botonAgregarBano.innerText = 'Agregar al carrito'
+agregarBano.append(botonAgregarBano)
 
 //finalizar compra
 
@@ -149,7 +149,7 @@ boton.onclick = () => {
     }
 
 
-    alert ('Gracias '+nombre+' por usar ARKI!')
+    alert ('Gracias por usar ARKI!')
 
 
 }
