@@ -5,33 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <link rel="stylesheet" href="@sweetalert2/theme-borderless/borderless.css">
+
     <title>proyecto</title>
 </head>
 <body>
 
-    <h1>Bienvenidos a ARKI!</h1>
 
-    <h2 id="titulo2">Ingresa tus datos:</h2>
+    <div id="divDatos">
 
-    <form id="formRegistro">
+        <h1 id="titulo2">Remodelar tu casa nunca fue tan fácil!Ingresa tus datos:</h1>
 
-        
-        <label> Nombre:</label>
-        <input type="text" name="nombre" id="nombre" placeholder="Kiara..">
+        <form id="formRegistro">
 
-        <label> Apellido:</label>
-        <input type="text" name="apellido" id="apellido" placeholder="Alfaro">
+            
+            <label> Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Kiara..">
 
-        <label> E-mail:</label>
-        <input type="text" name="email" id="email" placeholder="ejemplo@gmail.com">
-        
-        <input type="submit" value="Enviar">
+            <label> Apellido:</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Alfaro">
 
-    </form>
+            <label> E-mail:</label>
+            <input type="text" name="email" id="email" placeholder="ejemplo@gmail.com">
+            
+            <input id="ingresar" type="submit" value="Enviar">
 
-    <h3>Remodelaciones:</h3>
+        </form>
 
-    <section class="presentacion">
+    </div>
+
+    <div id="saludo"></div>
+
+    
+
+    <section id="presentacion">
+
+        <h3>Remodelaciones:</h3>
 
         <div class="card">
 
@@ -56,14 +70,19 @@
 
 
             <div id="agregarBano"></div>
-            
-    
+
         </div>
 
+
+        <input id="terminarCompra" type="submit" value="terminarCompra">
+
     </section>
+
+    <div id="tituloMontoFinal"></div>
    
 
-    <script src="./js/dom.js"></script>
-    <script src="./js/formulario.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2/dist/sweetalert2.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
