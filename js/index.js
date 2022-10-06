@@ -214,6 +214,9 @@ botonFinalizar.onclick = () => {
 
 // insertar luego eleccion de arquitectos//
 
+//.///
 
+const clima = fetch('https://pokeapi.co/api/v2/pokemon')
 
-
+console.log(clima)
+ 
