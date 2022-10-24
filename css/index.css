@@ -1,27 +1,194 @@
-.card{
+.swal2-title {
+  color: white !important; }
 
-    display: flex;
-    flex-direction: column !important;
-    justify-content: space-around;
-    width: 200px;
-    height: 400px;
-    margin-left: 30px;
-    
-}
+.swal2-container.swal2-center > .swal2-popup {
+  background-color: #312f2f; }
 
-#proyectos{
+.swal2-html-container {
+  color: white !important; }
 
-    display: flex;
-    flex-direction: row;
+.swal2-styled.swal2-confirm {
+  background-color: #524e4e !important; }
 
-}
+.navbar {
+  background-color: #2b2727 !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2; }
+  .navbar a {
+    color: white;
+    font-style: bold !important; }
+  .navbar p {
+    font-size: 20px; }
 
-#formRegistro{
+body {
+  background-color: #2b2727 !important;
+  padding-top: 80px; }
+  body #divDatos {
+    background-color: #312f2f !important;
+    border-radius: 20px;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 10%;
+    padding-top: 40px;
+    padding-bottom: 40px; }
+    body #divDatos p, body #divDatos h1, body #divDatos h2 {
+      color: white !important; }
+    body #divDatos #titulo2 {
+      text-align: center !important;
+      font-style: bold; }
+    body #divDatos #formRegistro {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      margin-left: 25%;
+      margin-top: 40px; }
+      body #divDatos #formRegistro label {
+        color: white !important;
+        margin-bottom: 3px; }
+      body #divDatos #formRegistro input {
+        margin-bottom: 10px;
+        margin-left: 5px; }
+      body #divDatos #formRegistro #ingresar {
+        background-color: #aca499;
+        border-radius: 10px; }
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-    height: 200px;
-    width: 300px;
-}
+.tituloBienvenido {
+  margin-left: 10px;
+  text-align: center; }
+
+#presentacion {
+  margin-top: 50px;
+  grid-area: productos; }
+  #presentacion h3 {
+    text-align: center; }
+  #presentacion #proyectos {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%; }
+
+.cuerpo {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "productos cartel"; }
+
+h3, h2 {
+  color: white !important; }
+
+#cartel {
+  top: 200px;
+  right: 100px;
+  position: fixed;
+  grid-area: cartel; }
+
+#tituloCartel {
+  background-color: #312f2f;
+  color: white;
+  border-radius: 20px;
+  padding: 15px;
+  text-align: center;
+  width: 400px; }
+
+#resumenCarrito {
+  background-color: #312f2f;
+  color: white;
+  border-radius: 20px;
+  padding: 15px;
+  width: 450px;
+  overflow: auto; }
+
+.contenidoCarrito {
+  display: flex;
+  flex-direction: row; }
+  .contenidoCarrito h3 {
+    font-size: 15px !important;
+    width: 40%; }
+  .contenidoCarrito p {
+    font-size: 15px;
+    margin-left: 10%;
+    width: 10%; }
+
+.elimarProducto, .boton-cerrar, #verCarrito {
+  cursor: pointer; }
+
+.titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.card {
+  width: 250px;
+  color: white;
+  background-color: #312f2f;
+  text-align: center;
+  margin-left: 30px;
+  margin-top: 30px; }
+  .card h4 {
+    margin-top: 10px; }
+  .card #carouselExampleControls {
+    width: 230px;
+    height: 250px;
+    margin-left: 10px;
+    overflow: hidden;
+    margin-bottom: 10px; }
+  .card select {
+    width: 230px;
+    margin-left: 10px; }
+
+#filaProyecto {
+  display: flex;
+  flex-direction: row; }
+
+#eleccionCocina, #eleccionBano, #eleccionDormitorio, #eleccionEstar {
+  width: 230px;
+  height: 25px;
+  padding: 0%;
+  padding-left: 10px !important; }
+
+#agregarBano button, #agregarCocina button, #agregarDormitorio button, #agregarEstar button {
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: #aca499;
+  margin-bottom: 10px; }
+
+#info1, #info2, #info3 {
+  background-color: #312f2f;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  padding: 20px !important;
+  border-radius: 15px;
+  height: 210px; }
+
+#clima {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: white; }
+
+footer {
+  background-color: #312f2f;
+  text-align: center;
+  width: 100%;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  z-index: 2; }
+
+.swal2-show, .swal2-success-circular-line-left, .swal2-success-circular-line-right, .swal2-success-fix {
+  background-color: #312f2f !important; }
+
+.swal2-container.swal2-top-end > .swal2-popup {
+  width: 300px; }
+
+#swal2-title {
+  font-size: 20px; }
+
+/*# sourceMappingURL=index.css.map */

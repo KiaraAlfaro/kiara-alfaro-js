@@ -1,0 +1,312 @@
+.swal2-title{
+
+    color:white!important;
+}
+.swal2-container.swal2-center>.swal2-popup{
+
+    background-color:rgb(49, 47, 47) ;
+}
+.swal2-html-container{
+
+    color: white !important;
+}
+
+.swal2-styled.swal2-confirm{
+
+    background-color:rgb(82, 78, 78) !important;
+}
+.navbar{
+
+    background-color:rgb(43, 39, 39) !important ;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    
+    a{
+        color: white;
+        font-style:bold !important;
+    }
+
+    p{
+
+        font-size: 20px;
+    }
+}
+
+body{
+
+    background-color: rgb(43, 39, 39) !important;
+    padding-top: 80px;
+
+    
+
+    
+    #divDatos{
+
+        background-color: rgb(49, 47, 47) !important ;
+        border-radius: 20px;
+        width: 80%;
+        margin-top: 50px;
+        margin-left: 10%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        p, h1, h2{
+
+            color: white !important;
+        }
+
+        #titulo2{
+
+            text-align: center !important;
+            font-style: bold;
+        }
+
+        #formRegistro{
+
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin-left: 25%;
+            margin-top: 40px;
+
+            label{
+
+                color: white !important;
+                margin-bottom: 3px;
+            }
+            input{
+
+                margin-bottom: 10px;
+                margin-left: 5px;
+            }
+
+            #ingresar{
+
+                background-color: rgb(172, 164, 153);
+                border-radius: 10px;
+            }
+        }
+
+    }
+
+
+
+}
+
+.tituloBienvenido{
+
+    margin-left: 10px;
+    text-align: center;
+}
+
+#presentacion{
+
+    margin-top: 50px;
+    grid-area: productos;
+
+    h3{
+
+        text-align: center;
+    }
+
+    #proyectos{
+
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+}
+
+.cuerpo{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "productos cartel";
+}
+h3,h2{
+
+    color: white !important;
+}
+#cartel{
+
+    top: 200px;
+    right: 100px;
+    position: fixed;
+    grid-area: cartel;
+
+
+}
+#tituloCartel{
+
+    background-color:rgb(49, 47, 47) ;
+    color: white;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    width: 400px;
+
+}
+#resumenCarrito{
+
+    background-color:rgb(49, 47, 47) ;
+    color: white;
+    border-radius: 20px;
+    padding: 15px;
+    width: 450px;
+    overflow: auto;
+}
+
+.contenidoCarrito{
+
+    display: flex;
+    flex-direction: row;
+    
+    h3{
+
+        font-size: 15px !important;
+        width: 40%;
+    }
+
+    p{
+        font-size: 15px;
+        margin-left: 10%;
+        width: 10%;
+        
+    }
+
+    
+}
+
+
+.elimarProducto,.boton-cerrar, #verCarrito{
+
+    cursor: pointer;
+}
+
+.titulo{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card{
+
+    width: 250px;
+    color: white;
+    background-color:rgb(49, 47, 47);
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 30px;
+
+    h4{ margin-top: 10px;}
+
+    #carouselExampleControls{
+
+        width: 230px;
+        height: 250px;
+
+        margin-left: 10px;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+
+    select{
+
+        width: 230px;
+        margin-left: 10px;
+    }
+   
+}
+
+#filaProyecto{
+
+    display: flex;
+    flex-direction: row;
+}
+
+#eleccionCocina, #eleccionBano, #eleccionDormitorio, #eleccionEstar {
+
+    width: 230px;
+    height: 25px;
+    padding: 0%;
+
+    padding-left: 10px !important;
+    
+}
+
+#agregarBano, #agregarCocina, #agregarDormitorio, #agregarEstar{
+
+    button{
+
+        margin-top: 10px;
+        border-radius: 10px;
+        background-color: rgb(172, 164, 153) ;
+        margin-bottom: 10px;
+
+    }
+}
+
+///clima
+
+#info1, #info2, #info3{
+
+    background-color: rgb(49, 47, 47);
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    padding: 20px !important;
+    border-radius: 15px;
+    height: 210px;
+}
+
+#clima{
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+   
+}
+
+footer{
+
+    background-color: rgb(49, 47, 47) ;
+    text-align: center;
+    width: 100%;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    
+    
+}
+
+
+///alert
+
+
+.swal2-show, .swal2-success-circular-line-left, .swal2-success-circular-line-right, .swal2-success-fix{
+
+    background-color: rgb(49, 47, 47) !important;
+}
+
+.swal2-container.swal2-top-end>.swal2-popup{
+
+    width: 300px;
+}
+
+
+#swal2-title{
+
+    font-size: 20px;
+}
